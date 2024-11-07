@@ -72,7 +72,7 @@ async def clear_chat(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
     await update.message.reply_text("Все настройки сброшены. Нажмите 'Старт', чтобы начать заново.")
 
 def main():
-    token = 'ВАШ КОД'
+    token = 'ВАШ ТОКЕН'
     app = Application.builder().token(token).build()
 
     app.add_handler(CommandHandler("start", start))
